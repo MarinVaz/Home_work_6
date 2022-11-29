@@ -4,7 +4,7 @@
 int size = ReadInt("Введите размерность массива: ");
 int [] numbers = new int[size];
 
-FillArrayRandomNumbers(numbers,0,15);;
+FillArrayRandomNumbers(numbers,0,15);
 WriteArray(numbers);
 
 int max = numbers[0];

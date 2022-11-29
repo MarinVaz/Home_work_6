@@ -2,8 +2,7 @@
 //[3, 7, 23, 12] => 19
 //[-4, -6, 89, 6] => 0
 
-Console.WriteLine("Введите размер массива:  ");
-int size = Convert.ToInt32(Console.ReadLine());
+int size = ReadInt("Введите размер массива: ");
 int[] numbers = new int [size];
 int sum=0;
 
@@ -37,3 +36,8 @@ void WriteArray(int[] array)
     Console.WriteLine();
     }
 
+int ReadInt(string message)  
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
